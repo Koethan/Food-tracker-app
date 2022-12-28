@@ -1,0 +1,79 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear:both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+ /* By setting the html min-height to 100% and the adding the background linear gradient to the body with the fixed property, noo matter how big the page gets, the gradient stays the same throughout */
+html {
+  min-height:100%;
+}
+
+body{
+  background:linear-gradient(white, cadetblue,navy) fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+input {
+  width: 200px;
+}
+
+button {
+  /* center the button and put it on a new line */
+  margin: 20px auto; 
+  display:block;
+}
+
+img {
+  max-height: 300px;
+  max-width: 100px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  background-color: white;
+  margin: 20px auto;
+  padding: 2px;
+
+}
+
+.non-veg-item {
+  background-color: red;
+}
+
+.unknown-maybe-item {
+  background-color: yellow;
+}
